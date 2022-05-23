@@ -11,7 +11,8 @@
     .portadah1,
     .portadah2,
     .portadah3,
-    .portadah4 {
+    .portadah4,
+    .portadah5 {
         color: white;
         margin: 0;
         padding: 0;
@@ -67,7 +68,6 @@
     
     .encabezado {
         background-color: #E8D637;
-        padding-left: 600px;
         margin: 0;
     }
     
@@ -75,4 +75,40 @@
         color: #E8D637;
         font-size: 50px;
         margin-bottom: 20px;
+    }
+    
+    .portadah5 {
+        color: gray;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .comoComprar {
+        background-color: #E8D637;
+    }
+    
+    .comoComprar img {
+        width: 200px;
+        margin-left: 250px;
+        padding: 0;
+        justify-content: last baseline;
+    }
+    
+    .formularioConsulta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: gray;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .portadah4Form {
+        color: #E8D637;
+        font-size: 50px;
+    }
+    
+    footer {
+        background-color: black;
+        color: #E8D637;
     }
