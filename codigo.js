@@ -11,10 +11,7 @@
 // Primero seleccionar la mascota y el rubro
 
 
-function compraPetshop(mascota) {
-    return mascota != '';
 
-}
 
 
 const mascotaRubro = function(mascota, rubro) { return mascota + rubro }
