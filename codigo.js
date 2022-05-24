@@ -9,11 +9,6 @@
 
 
 // Primero seleccionar la mascota y el rubro
-
-
-
-
-
 const mascotaRubro = function(mascota, rubro) { return mascota + rubro }
 let mascota = prompt("¿Cómo se llama tu mascota?");
 //Seleccionar alimento balanceado o accesorio
@@ -21,17 +16,15 @@ while (mascota != "") {
     let rubro = parseInt(prompt("Qué estás buscando para " + mascota + "?" + "\n 1 - Alimento balanceado \n 2 - Accesorios \n(Ingrese el número correspondiente)"));
     console.log(mascotaRubro(mascota, rubro));
     const mascotaAlimento = function(bolsa, cantidad) { return bolsa + cantidad }
-    let bolsa = "";
-    let cantidad = "";
+    let bolsa = prompt("Ingrese la marca de alimento de su preferencia \nWaltcan \nJaspe");
+    let cantidad = prompt("De cuantos kg \n 15kg \n 25kg");
+    let formaDePago = parseInt(prompt("Ingrese con que metodo va a abonar\n 1-Efectivo \n 2-Tarjeta de credito \n 3-Tarjeta de debito \n (Ingrese el numero correspondiente)"));
     const precioW = 150;
     const precioJ = 130;
     let descuentoEfectivo = 0.10;
     let descuentoDebito = 0.03;
     if (rubro == "1") {
         alert("Mascota: " + mascota + ", " + "busca: Alimento Balanceado");
-        let bolsa = prompt("Ingrese la marca de alimento de su preferencia \nWaltcan \nJaspe");
-        let cantidad = prompt("De cuantos kg \n 15kg \n 25kg");
-        let formaDePago = parseInt(prompt("Ingrese con que metodo va a abonar\n 1-Efectivo \n 2-Tarjeta de credito \n 3-Tarjeta de debito \n (Ingrese el numero correspondiente)"));
         if (bolsa = "waltcan") {
             if (formaDePago == 1) {
                 let precioEfectivoW = (precioW * cantidad) - (descuentoEfectivo * precioW * cantidad);
@@ -69,3 +62,17 @@ while (mascota != "") {
 console.log(mascota + rubro + bolsa + cantidad);
 alert("Corresponde ingresar tipo de mascota");
 //RECORDATORIO: AL FINAL HACCER EL BUCLE PARA QUE CUANDO PONGA OK SE CALCULE EL PRECIO + DESCUENTO EN EFECTIVO
+
+
+function operar(cantidad, precio, formaDePago) {
+    switch (precio) {
+        case "multiplicar":
+            return multiplicar(precio, cantidad);
+        default:
+            return 0;
+
+    }
+}
+
+
+operar(cantidad, precio, formaDePago)
