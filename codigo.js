@@ -43,13 +43,11 @@ let efectivo = (a, b) => {
 const resta = (a, b) => a - b
 let descuentoEf = 0;
 
-// function descuentoEfectivof() {
-//     descuentoEfectivo = resta(resultado, descuentoEf);
-// }
+
 
 
 //FUNCION DOS
-//Variables
+
 
 
 function descuento() {
