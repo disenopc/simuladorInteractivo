@@ -56,7 +56,7 @@ function descuento() {
         descuentoEf = 0.1 * resultado;
         descuentoEfectivo = resultado - descuentoEf
     } else {
-        alert("Se le cobrara precio de lista");
+        alert("Se le cobrará precio de lista");
         return descuentoEfectivo = resultado;
     }
 }
