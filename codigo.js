@@ -7,7 +7,7 @@ let resultado;
 let descuentoEfectivo;
 
 function formaDePago() {
-    cantidad = parseInt(prompt('De cuántos kg prefiere la bolsa de Alimento Balanceado \n 15kg \n 25kg \n(Solo ingresar el número)'));
+    cantidad = parseInt(prompt('De cuántos kg prefiere la bolsa de Alimento Balanceado? \n 15kg \n 25kg \n(Sólo ingresar el número)'));
     precioUnitario = parseInt(prompt('Ingrese el precio unitario de su producto elegido'));
     precioFinal = prompt('Desea abonar en Efectivo?\n Si \n No \n(Favor de escribir la palabra)');
 }
