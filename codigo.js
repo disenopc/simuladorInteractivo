@@ -7,7 +7,7 @@ let resultado;
 let descuentoEfectivo;
 
 function formaDePago() {
-    cantidad = parseInt(prompt('De cuantos kg prefiere la bolsa de Alimento Balanceado \n 15kg \n 25kg \n(Solo ingresar el número'));
+    cantidad = parseInt(prompt('De cuantos kg prefiere la bolsa de Alimento Balanceado \n 15kg \n 25kg \n(Solo ingresar el número)'));
     precioUnitario = parseInt(prompt('Ingrese el precio unitario de su producto elegido'));
     precioFinal = prompt('Desea abonar en Efectivo?\n Si \n No');
 }
@@ -28,6 +28,8 @@ function operar(num1, num2, precioFinal) {
     switch (precioFinal) {
         case 'si':
             return precio(precioUnitario, cantidad);
+        case 'no':
+            return precio(precioUnitario, cantidad);
         default:
             break;
     }
@@ -39,11 +41,11 @@ let efectivo = (a, b) => {
 };
 
 const resta = (a, b) => a - b
-const descuentoEf = 0.1 * resultado;
+let descuentoEf = 0;
 
-function descuentoEfectivof() {
-    descuentoEfectivo = resta(resultado, descuentoEf);
-}
+// function descuentoEfectivof() {
+//     descuentoEfectivo = resta(resultado, descuentoEf);
+// }
 
 
 //FUNCION DOS
@@ -53,13 +55,13 @@ function descuentoEfectivof() {
 function descuento() {
     if (precioFinal == "si") {
         alert("Se le realizara un descuento por pago en efectivo del 10%")
-        return descuentoEf;
+        descuentoEf = 0.1 * resultado;
+        descuentoEfectivo = resultado - descuentoEf
     } else {
         alert("Se le cobrara precio de lista");
-        return false;
+        return descuentoEfectivo = resultado;
     }
 }
-
 formaDePago();
 resultado = operar(precioUnitario, cantidad, precioFinal);
 mostrar("El precio final de tu producto es $" + resultado);
