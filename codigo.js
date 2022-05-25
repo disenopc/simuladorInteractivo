@@ -7,9 +7,9 @@ let resultado;
 let descuentoEfectivo;
 
 function formaDePago() {
-    cantidad = parseInt(prompt('De cuantos kg prefiere la bolsa de Alimento Balanceado \n 15kg \n 25kg \n(Solo ingresar el número)'));
+    cantidad = parseInt(prompt('De cuántos kg prefiere la bolsa de Alimento Balanceado \n 15kg \n 25kg \n(Solo ingresar el número)'));
     precioUnitario = parseInt(prompt('Ingrese el precio unitario de su producto elegido'));
-    precioFinal = prompt('Desea abonar en Efectivo?\n Si \n No');
+    precioFinal = prompt('Desea abonar en Efectivo?\n Si \n No \n(Favor de escribir la palabra)');
 }
 
 
@@ -52,7 +52,7 @@ let descuentoEf = 0;
 
 function descuento() {
     if (precioFinal == "si") {
-        alert("Se le realizara un descuento por pago en efectivo del 10%")
+        alert("Se le realizará un descuento por pago en efectivo del 10%")
         descuentoEf = 0.1 * resultado;
         descuentoEfectivo = resultado - descuentoEf
     } else {
